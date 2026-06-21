@@ -1,5 +1,18 @@
 # CPT316 - Programming Language Implementation and Paradigms (Assignment 1)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="Language" />
+  <img src="https://img.shields.io/badge/Course-CPT316-24292e?style=for-the-badge" alt="Course" />
+  <a href="https://github.com/ahmedtags">
+    <img src="https://img.shields.io/badge/Profile-ahmedtags-D9A34A?style=for-the-badge&logo=github&logoColor=white" alt="Profile" />
+  </a>
+  <a href="https://blxman-37fy.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-blxman--37fy-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
+---
+
 This repository contains the C++ compiler scanner and parser implementation and PDF report for **CPT316: Programming Language Implementation and Paradigms - Assignment 1** (Semester 1, Academic Session 2025/2026) at Universiti Sains Malaysia (USM).
 
 ## Course Details
