@@ -55,3 +55,78 @@ The assignment requires building a mini-compiler (lexical scanner and syntax par
    ./compy_parser
    ```
 3. Enter expression statements (e.g., `x = a + (b * 5);`) to view the token breakdown and generated syntax tree.
+
+---
+
+## 📸 Sample Output
+
+Input: `x = a + (b * 5);`
+
+```
+***********************************************
+*     COMPY LANGUAGE MINI-COMPILER           *
+*     CPT316 Assignment 1                    *
+***********************************************
+
+Choose an option:
+1. Enter custom input
+2. Exit
+Enter choice: 1
+
+Enter COMPY statement: x = a + (b * 5);
+============================================================
+INPUT: x = a + (b * 5);
+============================================================
+
+--- LEXICAL ANALYSIS ---
+
+========== TOKEN STREAM ==========
+No.  Type           Value     Position
+----------------------------------------
+1    IDENTIFIER     x         0
+2    ASSIGN         =         2
+3    IDENTIFIER     a         4
+4    PLUS           +         6
+5    LPAREN         (         8
+6    IDENTIFIER     b         9
+7    MULTIPLY       *         11
+8    NUMBER         5         13
+9    RPAREN         )         14
+10   SEMICOLON      ;         15
+=================================
+
+========== TOKEN STATISTICS ==========
+Total tokens: 10
+Identifiers: 3
+Numbers: 1
+Operators: 2
+Other tokens: 4
+======================================
+
+--- SYNTAX ANALYSIS ---
+
+Parsing successful! Syntax tree generated.
+
+========== SYNTAX TREE ==========
++-- <stmt>
+    |-- x
+    |-- =
+    |-- <expr>
+    |   |-- <term>
+    |   |   +-- <factor>
+    |   |       +-- a
+    |   |-- +
+    |   +-- <term>
+    |       +-- <factor>
+    |           |-- (
+    |           |-- <expr>
+    |           |   +-- <term>
+    |           |       |-- <factor>
+    |           |       |   +-- b
+    |           |       |-- *
+    |           |       +-- <factor>
+    |           |           +-- 5
+    |           +-- )
+    +-- ;
+=================================
+```
